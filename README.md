@@ -1,3 +1,3 @@
-## Bookmark
+## Lila
 
-The official website of the Bookmark Chess Engine.
+The official website of the Lila Chess Engine.
