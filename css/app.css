@@ -1,0 +1,22 @@
+@font-face {
+  font-family: FFMark;
+  src: url(../fonts/FontFont_FF.Mark.Pro.Black.otf);
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	overscroll-behavior: none;
+	background-color: #141414;
+}
+
+#app {
+	width: 100%;
+	height: 100vh;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
