@@ -1,4 +1,5 @@
 :root {
+  --primary: #000;
   --background: #fff;
   --accents-1: #fafafa;
   --accents-2: #eaeaea;
@@ -26,6 +27,102 @@ body {
 
 #app {
 	width: 100%;
+}
+
+.header-container {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	min-height: 72px;
+	
+	display: flex;
+	justify-content: center;
+	
+	transition: box-shadow .2s ease 0s,background-color .2s ease 0s;
+	background-color: hsla(0, 0%, 100%, 0.8);
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+	box-sizing: inherit;
+	
+	width: 1000px;
+	margin: auto;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.header-logo {
+	display: flex;
+	align-items: center;
+}
+
+.header-logo svg {
+	padding: 8px;
+	margin: -8px;
+	
+	height: 46px;
+	
+	cursor: pointer;
+}
+
+.header-buttons {
+	display: flex;
+	align-items: center;
+	
+	margin-left: auto;
+}
+
+.header-button {
+	color: var(--accents-5);
+	transition: color .1s ease;
+	
+	margin-left: 24px;
+	
+	text-decoration: none;
+	outline: none;
+	font-size: 14px;
+	font-family: 'Inter', sans-serif;
+}
+
+.header-button:hover {
+	color: var(--hover);
+}
+
+.download-button {
+	margin-left: 24px;
+}
+
+.download-button a {
+	display: flex;
+	align-items: center;
+	
+	min-width: auto;
+	height: 18px;
+	line-height: 0;
+	font-size: 0.875rem;
+	padding: 5px 12px 7px 12px;
+	
+	border-radius: 5px;
+	border: 1px solid var(--primary);
+	
+	background-color: var(--primary);
+	color: var(--background);
+	outline: var(--primary) none medium;
+	transition: all 0.2s ease 0s;
+	
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+	user-select: none;
+}
+
+.download-button:hover a {
+	background-color: var(--background);
+	color: var(--primary);
 }
 
 .footer-container {
