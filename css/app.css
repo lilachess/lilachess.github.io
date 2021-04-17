@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Segoe UI Black;
+  src: url(fonts/Segoe UI Black.ttf);
+}
+
+@font-face {
+  font-family: Segoe UI Medium;
+  src: url(fonts/Segoe UI Medium.ttf);
+}
+
 :root {
   --primary: #000;
   --secondary: #666;
@@ -349,12 +359,19 @@ body {
 	font-family: 'Inter', sans-serif;
 }
 
-.logo svg {
-	height: 116px;
-	margin-top: 72px;
+.slogan-title {
+	margin-top: 74px;
+	
+	color: var(--primary);
+	
+	line-height: 1.01em;
+	font-weight: 900;
+	letter-spacing: -.049375rem;
+	font-size: 4.5rem;
+	font-family: 'Segoe UI Black', sans-serif;
 }
 
-.logo-subtitle {
+.slogan-subtitle {
 	margin-top: 48px;
 	margin-bottom: 48px;
 	
@@ -364,5 +381,5 @@ body {
 	letter-spacing: -.01125rem;
 	font-size: 24px;
 	font-weight: 500;
-	font-family: 'Inter', sans-serif;
+	font-family: 'Segoe UI Medium', sans-serif;
 }
