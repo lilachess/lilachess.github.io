@@ -21,10 +21,6 @@ body {
 	background-color: var(--background);
 }
 
-.protected {
-	
-}
-
 #app {
 	width: 100%;
 }
